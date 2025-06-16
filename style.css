@@ -1,0 +1,98 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Header section like in the mockup */
+header {
+    background-image: url("images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+/* Custom primary button */
+.btn-primary {
+  background-color: #1e5f3e;
+  border-color: #1e5f3e;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #174c32;
+  border-color: #174c32;
+}
+
+.carousel-item img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.custom-outline {
+    color: #333;
+    border-color: #ccc;
+}
+  
+.custom-outline:hover {
+    background-color: #f0f0f0;
+    color: #000;
+    border-color: #aaa;
+}
+
+/* Section titles */
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Image presentation style like furniture mockup */
+.img-fluid {
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Gallery section */
+#destinations .col-md-4, .row .col-md-4 {
+  padding: 15px;
+}
+
+/* Form style */
+form {
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Footer like the bottom in mockup */
+footer {
+  background-color: #222;
+  color: #bbb;
+  font-size: 14px;
+  padding: 30px;
+  text-align: center;
+  margin-top: 60px;
+}

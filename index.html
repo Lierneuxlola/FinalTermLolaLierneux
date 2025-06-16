@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyage en Colombie</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="bg-warning text-white text-center py-5">
+    <h1 class="display-4">Colombia</h1>
+    <p class="lead">Jungle, beaches, mountains, and a vibrant culture await you!</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+
+    <!-- Carousel -->
+    <div id="colombiaCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/cartagena.jpg" class="d-block w-100 rounded" alt="Cartagena">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cartagena</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/minca.jpg" class="d-block w-100 rounded" alt="Région caféière">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Minca</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/medellin.jpg" class="d-block w-100 rounded" alt="Medellín">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Medellín</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#colombiaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#colombiaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+<!-- Destinations -->
+<section id="destinations" class="row text-center">
+    <div class="col-md-4 mb-4">
+      <h3>Palomino</h3>
+      <p>Parties and paradise beaches</p>
+      <button class="btn btn-outline-light custom-outline" data-bs-toggle="modal" data-bs-target="#bogotaModal">
+        Learn more
+      </button>
+    </div>
+    <div class="col-md-4 mb-4">
+      <h3>Santa Marta</h3>
+      <p>Access to Tayrona Park and dreamlike beaches</p>
+      <button class="btn btn-outline-light custom-outline" data-bs-toggle="modal" data-bs-target="#santaModal">
+        Learn more
+      </button>
+    </div>
+    <div class="col-md-4 mb-4">
+      <h3>Salento</h3>
+      <p>Cocora Valley and artisanal coffee</p>
+      <button class="btn btn-outline-light custom-outline" data-bs-toggle="modal" data-bs-target="#salentoModal">
+        Learn more
+      </button>
+    </div>
+  </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="bogotaModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Learn more about Palomino</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="images/palomino.jpeg" class="img-fluid rounded mb-3" alt="Plage de Palomino">
+              <p>Palomino is a peaceful coastal village on Colombia’s Caribbean coast. 
+                Known for its palm-lined beaches, laid-back atmosphere, and scenic river tubing, it’s the perfect spot to relax, surf, 
+                or explore nature between the ocean and the jungle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="santaModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Learn more about Santa Marta</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="images/santamarta.jpeg" class="img-fluid rounded mb-3" alt="Santa Marta">
+              <p>Santa Marta is a vibrant coastal city and one of Colombia’s oldest. 
+                It offers easy access to Tayrona National Park, where lush jungle meets crystal-clear Caribbean beaches — perfect for hiking, 
+                relaxing, and experiencing nature at its best.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="salentoModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Learn more about Salento</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="images/salento.jpeg" class="img-fluid rounded mb-3" alt="Salento">
+              <p>Salento is a charming town in Colombia’s coffee region, surrounded by green hills and famous for its colorful streets and artisan shops. 
+                It’s the gateway to the stunning Cocora Valley, home to the tallest palm trees in the world.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Formulaire de contact -->
+    <section id="contact" class="mt-5">
+      <h2 class="text-center mb-4">
+        <i class="bi bi-envelope-fill me-2"></i>Contact us
+      </h2>      <form class="mx-auto" style="max-width: 600px;" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+          <div class="invalid-feedback">Tell us your name so we know who is ready to explore Colombia.</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">We will need a valid email to send you your Colombian adventure plan.</div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+          <div class="invalid-feedback">Share your travel ideas or questions about Colombia!</div>
+        </div>
+        <button type="submit" class="btn btn-outline-light custom-outline">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-4 mt-5">
+    <p>&copy; 2025 Colombia. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Form validation script -->
+  <script>
+    (() => {
+      const forms = document.querySelectorAll('form');
+      forms.forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
